@@ -14,6 +14,7 @@ namespace CryptoApp
 				Console.WriteLine("0 - exit");
 				Console.WriteLine("1 - Diffi-Hellmans session's keys generator");
 				Console.WriteLine("2 - Steganography - Least Significant Bit Algorithm");
+				Console.WriteLine("3 - Blum Blum Shub key generator");
 				option = int.Parse(Console.ReadLine());
 				switch (option)
 				{
@@ -107,6 +108,11 @@ namespace CryptoApp
 								Least_Significant_Bit_Algorytm lsba = new Least_Significant_Bit_Algorytm(option_2,
 									r_bits, g_bits, b_bits, path_in, path_out, message_size);
 							}
+							break;
+						}
+					case 3:
+						{
+							Blum_Blum_Shub BBS = new Blum_Blum_Shub();
 							break;
 						}
 				}
